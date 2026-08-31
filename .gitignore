@@ -1,0 +1,18 @@
+# Binários compilados (recompilar com compilar.sh de cada pasta)
+01_matriz_schedule/mult_matriz
+02_laplace2d/laplace2d_1k_gcc_i50
+02_laplace2d/laplace2d_1k_gcc_i500
+02_laplace2d/laplace2d_1loop_gcc_i500
+02_laplace2d/laplace2d_gcc_i50
+02_laplace2d/laplace2d_gcc_i500
+03_fibonacci/fib_task
+03_fibonacci/fib_task_cutoff
+04_escalar/exemplo_escalar_atomic
+04_escalar/exemplo_escalar_critical
+04_escalar/exemplo_escalar_local
+04_escalar/exemplo_escalar_reduction
+04_fatorial/fatorial_critical
+04_fatorial/fatorial_local
+04_fatorial/fatorial_reduction
+05_simd/exemplo_simd_off
+05_simd/exemplo_simd_on
