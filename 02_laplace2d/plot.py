@@ -16,10 +16,23 @@ CSV_PATH = "resultados.csv"
 
 # programa -> threads -> [tempos]
 data = defaultdict(lambda: defaultdict(list))
+machines = set()
 
 with open(CSV_PATH, newline="") as f:
     for row in csv.DictReader(f):
         data[row["programa"]][int(row["threads"])].append(float(row["tempo_s"]))
+        if row.get("maquina"):
+            machines.add(row["maquina"])
+
+if len(machines) == 1:
+    print(f"Dados de uma unica maquina: {next(iter(machines))}")
+elif len(machines) > 1:
+    print("AVISO: resultados.csv tem dados de MAIS DE UMA maquina -- os graficos vao")
+    print("misturar/comparar tempos entre maquinas diferentes, o que nao faz sentido:")
+    for m in sorted(machines):
+        print(f"  - {m}")
+else:
+    print("AVISO: resultados.csv nao tem a coluna 'maquina' (dados de uma versao antiga do bench.sh)")
 
 
 def mean_by_threads(prog):

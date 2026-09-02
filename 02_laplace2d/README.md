@@ -36,15 +36,21 @@ controlado só por `iter_max`.
   combinação arquivo × `ITER_MAX`), com `gcc -fopenmp -O2`.
 - `bench.sh [max_threads] [repeticoes] [arquivo_saida.csv]` — roda os
   programas listados em `$PROG_LIST` (ou todos, se `PROG_LIST` não for
-  definida) com `OMP_NUM_THREADS` de 1 até `max_threads` (padrão 4),
-  `repeticoes` vezes cada (padrão 5), grava o CSV e imprime a média por
-  configuração.
+  definida) com `OMP_NUM_THREADS` de 1 até `max_threads`, `repeticoes` vezes
+  cada (padrão 5), grava o CSV e imprime a média por configuração.
+  `max_threads`, se omitido, usa o número de núcleos físicos **detectado
+  automaticamente** via `lscpu` (não é mais um `4` fixo — rodar em outra
+  máquina já testa a faixa certa de threads sozinho). Cada linha do CSV
+  grava também a coluna `maquina` (modelo de CPU + núcleos físicos
+  detectados); se o arquivo de saída já tiver dados de uma máquina
+  diferente, o script avisa antes de sobrescrever.
 - `plot.py` — lê `resultados.csv` e gera os 3 gráficos por experimento
   (tempo x threads e speedup x threads, todos com a mesma escala de Y no
   speedup, sem a linha de "speedup ideal"): `curva_exp1_malha4096.png`,
   `curva_exp2_malha1024.png`, `curva_exp3_fusao.png`; mais um gráfico
   combinado com o tempo de todos os experimentos numa escala log:
-  `curva_todos_tempos.png`. Requer `matplotlib`
+  `curva_todos_tempos.png`. Avisa no terminal se o CSV misturar dados de
+  mais de uma máquina. Requer `matplotlib`
   (`pip3 install --user --break-system-packages matplotlib` no WSL).
 
 ## Como rodar
