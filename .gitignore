@@ -16,3 +16,8 @@
 04_fatorial/fatorial_reduction
 05_simd/exemplo_simd_off
 05_simd/exemplo_simd_on
+08_pi_MPI/pi_openmp
+08_pi_MPI/pi_mpi
+08_pi_MPI/pi_hybrid
+09_jacobi_MPI/jacobi_mpi_buffer
+09_jacobi_MPI/jacobi_mpi_vector

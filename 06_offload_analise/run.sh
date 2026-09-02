@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1                     #Numero total de tarefas MPI
 #SBATCH --cpus-per-task=24             #Numero de threads
 #SBATCH --gres=gpu:1                   #Numero de GPUs solicitadas
-#SBATCH -p treinamento                 #Fila (partition) a ser utilizada (verificar fila com GPU no cluster)
+#SBATCH -p sequana_gpu_dev              #Fila (partition) com GPU no Santos Dumont (ajuste se sinfo mostrar outro nome)
 #SBATCH -J semana-sdumont-offload      #Nome job
 
 ####################################################

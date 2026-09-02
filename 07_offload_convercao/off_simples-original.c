@@ -10,7 +10,7 @@ int a[N], b[N], c[N];
   }
   // Região paralela que será executada no dispositivo
   #pragma omp target map(to: a, b) map(from: c)
-    for (int i = 0; i < N; i++) 
+    for (int i = 0; i < N; i++)
          c[i] = a[i] + b[i];
   // Exibindo os resultados
   for (int i = 0; i < 10; i++)
