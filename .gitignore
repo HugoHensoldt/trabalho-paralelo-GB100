@@ -21,3 +21,6 @@
 08_pi_MPI/pi_hybrid
 09_jacobi_MPI/jacobi_mpi_buffer
 09_jacobi_MPI/jacobi_mpi_vector
+06_offload_analise/off_codigo1
+06_offload_analise/off_codigo3
+07_offload_convercao/off_simples

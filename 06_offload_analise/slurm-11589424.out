@@ -1,0 +1,13 @@
+Dados inciados no hospedeiro.
+Dados mapeados/alocados no dispositivo.
+host_target modificado no dispositivo.
+Hospedeiro: host_target (após update from) (primeiros 5 elementos): { 0.00, 2.00, 4.00, 6.00, 8.00 }
+Hospedeiro: host_source (após modificação local) (primeiros 5 elementos): { 100.00, 1.00, 2.00, 3.00, 4.00 }
+host_source[0] atualizado do hospedeiro para o dispositivo.
+Segunda computação modificando host_target no dispositivo.
+Dados finais de host_target transferidos para o hospedeiro, memória liberada no dispositivo.
+Verificação final dos dados no Hospedeiro:
+Hospedeiro: host_source (final) (primeiros 5 elementos): { 100.00, 1.00, 2.00, 3.00, 4.00 }
+Hospedeiro: host_target (final) (primeiros 5 elementos): { 105.00, 6.00, 7.00, 8.00, 9.00 }
+Verificação de host_target[0]: 105.00 (Esperado: 100.0 + 5.0 = 105.0)
+Verificação de host_target[1]: 6.00 (Esperado: 1.0 + 5.0 = 6.0)
