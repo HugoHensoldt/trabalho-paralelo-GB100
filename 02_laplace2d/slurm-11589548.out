@@ -1,0 +1,198 @@
+Maquina detectada: Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+OMP_NUM_THREADS testado de 1 a 48, 3 repeticoes, saida em resultados_sdumont_slow1.csv
+
+laplace2d_gcc_i500,1,1,35.151121,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,1,2,35.222171,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,1,3,35.203252,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,2,1,17.819101,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,2,2,17.813941,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,2,3,17.858171,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,3,1,12.211925,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,3,2,12.217103,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,3,3,11.968092,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,4,1,9.370108,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,4,2,9.395091,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,4,3,9.437550,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,5,1,7.537063,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,5,2,7.545953,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,5,3,7.508257,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,6,1,6.363031,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,6,2,6.356631,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,6,3,6.366506,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,7,1,5.544263,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,7,2,5.513482,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,7,3,6.007184,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,8,1,4.955505,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,8,2,4.982468,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,8,3,4.994911,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,9,1,4.500291,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,9,2,4.501266,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,9,3,4.499147,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,10,1,4.133308,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,10,2,4.149776,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,10,3,4.126636,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,11,1,3.859531,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,11,2,3.863570,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,11,3,3.851471,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,12,1,3.600749,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,12,2,3.557140,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,12,3,3.788205,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,13,1,3.430100,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,13,2,3.482599,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,13,3,3.430500,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,14,1,3.243509,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,14,2,3.244281,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,14,3,3.241038,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,15,1,3.115238,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,15,2,3.139876,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,15,3,3.152721,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,16,1,3.106954,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,16,2,3.149513,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,16,3,3.120124,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,17,1,2.926434,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,17,2,2.902513,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,17,3,2.898427,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,18,1,2.809117,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,18,2,2.818045,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,18,3,2.838182,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,19,1,2.836421,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,19,2,2.759254,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,19,3,2.768713,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,20,1,2.800536,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,20,2,2.790475,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,20,3,2.676011,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,21,1,2.608958,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,21,2,2.610654,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,21,3,2.629992,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,22,1,2.597119,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,22,2,2.585011,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,22,3,2.622519,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,23,1,2.556846,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,23,2,2.537667,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,23,3,2.550906,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,24,1,2.613565,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,24,2,2.492957,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,24,3,2.521697,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,25,1,2.543358,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,25,2,2.529274,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,25,3,2.497684,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,26,1,2.540436,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,26,2,2.571926,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,26,3,2.443455,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,27,1,2.427122,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,27,2,2.585097,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,27,3,2.508159,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,28,1,2.493544,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,28,2,2.468965,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,28,3,2.518291,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,29,1,2.486239,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,29,2,2.402997,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,29,3,2.439417,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,30,1,2.688886,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,30,2,2.412491,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,30,3,2.366297,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,31,1,2.480523,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,31,2,2.325713,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,31,3,2.318523,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,32,1,2.545934,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,32,2,2.487593,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,32,3,2.469748,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,33,1,2.439202,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,33,2,2.630279,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,33,3,2.343354,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,34,1,2.367336,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,34,2,2.369976,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,34,3,2.353048,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,35,1,2.315869,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,35,2,2.530351,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,35,3,2.448872,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,36,1,2.517582,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,36,2,2.539318,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,36,3,2.389876,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,37,1,2.433905,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,37,2,2.492967,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,37,3,2.299579,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,38,1,2.358036,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,38,2,2.420589,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,38,3,2.350555,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,39,1,2.474254,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,39,2,2.438062,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,39,3,2.397783,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,40,1,2.345991,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,40,2,2.482891,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,40,3,2.424002,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,41,1,2.427406,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,41,2,2.369270,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,41,3,2.407795,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,42,1,2.350032,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,42,2,2.575847,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,42,3,2.371982,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,43,1,2.405004,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,43,2,2.353499,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,43,3,2.356081,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,44,1,2.379748,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,44,2,2.451938,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,44,3,2.400928,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,45,1,2.472053,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,45,2,2.358740,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,45,3,2.488429,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,46,1,2.431949,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,46,2,2.494773,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,46,3,2.251275,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,47,1,2.522664,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,47,2,2.580758,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,47,3,2.605143,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,48,1,2.350039,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,48,2,2.661700,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+laplace2d_gcc_i500,48,3,2.530720,Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)
+
+=== Media por configuracao (REPS=3, maquina: Intel(R) Xeon(R) Gold 6252 CPU @ 2.10GHz (48 nucleos fisicos)) ===
+laplace2d_gcc_i500,1,35.1922
+laplace2d_gcc_i500,2,17.8304
+laplace2d_gcc_i500,3,12.1324
+laplace2d_gcc_i500,4,9.4009
+laplace2d_gcc_i500,5,7.5304
+laplace2d_gcc_i500,6,6.3621
+laplace2d_gcc_i500,7,5.6883
+laplace2d_gcc_i500,8,4.9776
+laplace2d_gcc_i500,9,4.5002
+laplace2d_gcc_i500,10,4.1366
+laplace2d_gcc_i500,11,3.8582
+laplace2d_gcc_i500,12,3.6487
+laplace2d_gcc_i500,13,3.4477
+laplace2d_gcc_i500,14,3.2429
+laplace2d_gcc_i500,15,3.1359
+laplace2d_gcc_i500,16,3.1255
+laplace2d_gcc_i500,17,2.9091
+laplace2d_gcc_i500,18,2.8218
+laplace2d_gcc_i500,19,2.7881
+laplace2d_gcc_i500,20,2.7557
+laplace2d_gcc_i500,21,2.6165
+laplace2d_gcc_i500,22,2.6015
+laplace2d_gcc_i500,23,2.5485
+laplace2d_gcc_i500,24,2.5427
+laplace2d_gcc_i500,25,2.5234
+laplace2d_gcc_i500,26,2.5186
+laplace2d_gcc_i500,27,2.5068
+laplace2d_gcc_i500,28,2.4936
+laplace2d_gcc_i500,29,2.4429
+laplace2d_gcc_i500,30,2.4892
+laplace2d_gcc_i500,31,2.3749
+laplace2d_gcc_i500,32,2.5011
+laplace2d_gcc_i500,33,2.4709
+laplace2d_gcc_i500,34,2.3635
+laplace2d_gcc_i500,35,2.4317
+laplace2d_gcc_i500,36,2.4823
+laplace2d_gcc_i500,37,2.4088
+laplace2d_gcc_i500,38,2.3764
+laplace2d_gcc_i500,39,2.4367
+laplace2d_gcc_i500,40,2.4176
+laplace2d_gcc_i500,41,2.4015
+laplace2d_gcc_i500,42,2.4326
+laplace2d_gcc_i500,43,2.3715
+laplace2d_gcc_i500,44,2.4109
+laplace2d_gcc_i500,45,2.4397
+laplace2d_gcc_i500,46,2.3927
+laplace2d_gcc_i500,47,2.5695
+laplace2d_gcc_i500,48,2.5142
+programa,threads,tempo_medio_s
