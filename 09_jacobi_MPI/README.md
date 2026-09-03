@@ -122,8 +122,20 @@ Como em [`08_pi_MPI`](../08_pi_MPI/README.md#limitação-deste-ambiente-de-desen
 esta máquina (Windows + WSL Ubuntu) não tem toolchain MPI instalado e não há
 `sudo` disponível no WSL para instalar `openmpi` (`sudo -n true` pede senha).
 Não foi possível compilar/executar `jacobi_mpi_buffer.c`/`jacobi_mpi_vector.c`
-localmente. A lógica foi revisada manualmente (topologia cartesiana e
-`Cart_shift` conferidos contra `teste11.c`, tipo derivado conferido contra
-`teste07.c`, casamento de tags dos 8 `Isend`/`Irecv` por iteração conferido à
-mão) — falta rodar no SDumont para gerar `resultados.csv` real (ver
-`resultados.md`).
+localmente antes de submeter ao cluster. Antes de rodar no SDumont, a lógica
+foi revisada manualmente (topologia cartesiana e `Cart_shift` conferidos
+contra `teste11.c`, tipo derivado conferido contra `teste07.c`, casamento de
+tags dos 8 `Isend`/`Irecv` por iteração conferido à mão) e validada por uma
+simulação em Python do mesmo algoritmo de decomposição/halo exchange contra
+o resultado serial de referência (`02_laplace2d`), batendo bit a bit.
+
+## Resultados
+
+`sbatch bench.sh` já foi executado no SDumont (16 processos, grid 4×4,
+malha 4096×4096, `ITER_MAX=50`, 10 repetições por variante) — ver tabela e
+discussão em [`resultados.md`](resultados.md) e dados brutos em
+[`resultados.csv`](resultados.csv). Resumo: as duas variantes empatam
+dentro do ruído (~0.185 s em média); a troca do empacotamento manual das
+colunas por `MPI_Type_vector` não trouxe ganho mensurável para este
+tamanho de problema, pois o custo do stencil por iteração domina o tempo
+total muito mais do que a cópia de uma coluna de 1024 doubles.

@@ -83,7 +83,5 @@ Cada pasta de tarefa incluirá instruções específicas (parâmetros, variaçõ
 - [ ] **08_pi_MPI** — código pronto (`pi_openmp.c`/`pi_mpi.c`/`pi_hybrid.c` +
   scripts `sbatch`), pendente de execução no SDumont (sem MPI/cluster
   disponível neste ambiente de desenvolvimento; ver `08_pi_MPI/README.md`).
-- [ ] **09_jacobi_MPI** — código pronto (`jacobi_mpi_buffer.c`/
-  `jacobi_mpi_vector.c` + scripts `sbatch`), lógica validada por simulação
-  local (sem toolchain MPI neste ambiente), pendente de execução no
-  SDumont (ver `09_jacobi_MPI/README.md`).
+- [x] **09_jacobi_MPI** — implementada e com resultados coletados no
+  SDumont (ver `09_jacobi_MPI/resultados.md`).

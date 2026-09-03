@@ -1,8 +1,8 @@
 # Apresentação — Tarefa 7: de OpenMP Offload para CUDA
 
 Conversão de `off_simples.c` (soma de vetores via `#pragma omp target`) para
-CUDA puro. Compilação/execução são feitas no SDumont (sem GPU local) —
-este documento traz o código, os scripts e o resultado esperado.
+CUDA puro. Compilado e executado no SDumont (job GPU via SLURM) — resultado
+real confirmado, ver abaixo.
 
 ## Arquivos
 
@@ -32,16 +32,18 @@ sbatch run.sh ./off_simples    # submete via SLURM (fila com GPU)
 cat slurm-<job_id>.out
 ```
 
-## Resultado esperado
+## Resultado real (SDumont, job 11589432)
 
-Como `c[i] = a[i] + b[i] = i + 2i = 3i`, os 10 primeiros valores impressos
-devem ser:
-
-```
+```bash
+[hugo.hensoldt@sdumont17 07_offload_convercao]$ bash compilar.sh
+*** COMPILACAO COMPLETADA ***
+[hugo.hensoldt@sdumont17 07_offload_convercao]$ sbatch run.sh ./off_simples
+Submitted batch job 11589432
+[hugo.hensoldt@sdumont17 07_offload_convercao]$ cat slurm-11589432.out
 0 3 6 9 12 15 18 21 24 27
 ```
 
-Esse resultado é determinístico (não depende de arredondamento nem de
-condição de corrida — cada thread escreve em uma posição exclusiva de
-`c`), então deve bater exatamente com a saída real do `off_simples` no
-SDumont.
+Bate exatamente com o esperado: `c[i] = a[i] + b[i] = i + 2i = 3i`, para
+`i = 0..9`. Confirma que o kernel CUDA reproduz a mesma computação da
+região `#pragma omp target` original, um thread por elemento (`c` sem
+condição de corrida, pois cada thread escreve em posição exclusiva).

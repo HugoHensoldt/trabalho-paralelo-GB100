@@ -5,7 +5,6 @@
 - `exemplo_simd_on.c` — laço em faixas (*strip-mining*): `#pragma omp parallel for` divide o vetor entre threads (128 elementos por bloco); dentro de cada bloco, `#pragma omp simd` vetoriza o laço interno. Cada elemento passa por `DoSomeWork` (50 iterações de `x = x*0.99 + 1.0`), pra dar trabalho de CPU suficiente pro SIMD ter efeito.
 - `exemplo_simd_off.c` — mesma estrutura de faixas e mesmo `DoSomeWork`, mas **sem** `#pragma omp simd` (só paralelismo de threads).
 - `compilar.sh` — compila as 2 versões com `-fno-tree-vectorize -fno-tree-slp-vectorize`, pra impedir o `gcc -O2` de vetorizar sozinho e assim isolar o efeito da diretiva.
-- `run.sh` / `bench.sh` — rodam as 2 versões para vários tamanhos de vetor (`N`).
 
 ## Como a diretiva impacta o desempenho
 

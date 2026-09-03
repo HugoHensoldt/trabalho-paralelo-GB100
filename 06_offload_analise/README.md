@@ -102,14 +102,21 @@ caiu silenciosamente para execução no host.
 
 **Nota sobre este ambiente de análise:** este relatório foi preparado em uma
 máquina Windows sem GPU e sem toolchain OpenMP-offload instalada, portanto a
-execução real em GPU não pôde ser feita aqui. A seção abaixo mostra a saída
-**esperada**, obtida por rastreamento manual (*trace*) do código — o próprio
-programa já inclui *asserts* impressos (`Esperado: ...`) que conferem esse
-resultado quando executado de fato no cluster.
+seção 5 abaixo foi originalmente obtida por rastreamento manual (*trace*) do
+código. Essa previsão foi depois **confirmada por execução real no Santos
+Dumont** (job SLURM `11589424`, partition `sequana_gpu_dev`) — saída batendo
+100% com o trace, incluída na íntegra logo abaixo.
 
-## 5. Execução — saída esperada (trace manual)
+## 5. Execução — saída real (confirmada no SDumont)
 
 Estado inicial: `host_source = {0, 1, 2, 3, 4, ..., 19}`, `host_target = {-1, -1, ..., -1}`.
+
+Compilação e submissão usadas:
+```bash
+bash compilar.sh
+sbatch run.sh ./off_codigo3
+cat slurm-11589424.out
+```
 
 ```
 Dados inciados no hospedeiro.
@@ -144,16 +151,12 @@ Passo a passo do porquê desses valores:
 - `target exit data` traz esse `host_target` final para o host e libera os
   dois buffers na GPU — encerrando o ciclo de vida do offload.
 
-## 6. Se executar no cluster
+## 6. Conclusão da execução
 
-Para confirmar a saída real em GPU e comparar com o trace acima, execute:
-
-```bash
-sbatch run.sh ./off_codigo3
-cat slurm-<job_id>.out
-```
-
-e verifique se as duas linhas de "Verificação de host_target" batem com os
-valores esperados impressos pelo próprio programa — isso confirma que o
+As duas linhas de "Verificação de host_target" no job real batem exatamente
+com os valores esperados impressos pelo próprio programa
+(`host_target[0] = 105.00` e `host_target[1] = 6.00`) — confirmando que o
 gerenciamento não-estruturado de dados (`enter data` / `update` / `exit data`)
-funcionou como projetado, sem nenhuma cópia supérflua entre host e device.
+funcionou como projetado, com apenas as transferências mínimas necessárias
+entre host e device (sem nenhuma cópia supérflua do vetor inteiro a cada
+região `target`).
