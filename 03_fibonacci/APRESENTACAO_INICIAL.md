@@ -26,6 +26,16 @@
 - **Com corte**, o ganho aparece de verdade só quando `n` é grande o suficiente para gerar tasks acima do corte em número suficiente: speedup de até ~2,5× em `n=44` com 8 threads, mas quase nenhum ganho em `n=34` (poucas tasks acima do corte para ocupar 8 threads).
 - Conclusão: paralelismo por tarefas exige granularidade mínima por task — tasks pequenas demais pioram o desempenho em vez de melhorar, e o ganho real de threads escala junto com o tamanho do problema.
 
+## Resultados
+
+![F(25)](fibonacci_f25.png)
+
+| Threads | fib(25) sem corte | fib(25) com corte |
+|---|---|---|
+| 1 | 15,0 ms | 0,13 ms |
+| 8 | 120,8 ms | 0,08 ms |
+
+
 ## Como rodar
 
 ```bash

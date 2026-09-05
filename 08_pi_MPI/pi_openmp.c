@@ -22,19 +22,24 @@ int main(int argc, char *argv[])
     double h = 1.0 / (double)n;
     double sum = 0.0;
 
-    double ini = omp_get_wtime();
+    double ini = omp_get_wtime(); // CRONOMETRAGEM: marca o tempo inicial
 
+    // PARALELIZACAO OPENMP: cria as threads (OMP_NUM_THREADS) e reparte as
+    // iteracoes do laco entre elas (schedule static = fatias iguais).
+    // reduction(+:sum) da uma copia privada de "sum" pra cada thread e soma
+    // tudo no final, sem precisar de lock/critical.
     #pragma omp parallel for reduction(+:sum) schedule(static)
     for (long long i = 1; i <= n; i++) {
+        // PONTO MEDIO: valor de 4/(1+x^2) no meio do i-esimo subintervalo
         double x = h * ((double)i - 0.5);
         sum += 4.0 / (1.0 + x * x);
     }
 
     double pi = h * sum;
-    double fim = omp_get_wtime();
+    double fim = omp_get_wtime(); // CRONOMETRAGEM: marca o tempo final
 
     printf("config=openmp threads=%d n=%lld pi=%.16f tempo_s=%f\n",
-           omp_get_max_threads(), n, pi, fim - ini);
+           omp_get_max_threads(), n, pi, fim - ini); // threads = quantas threads OpenMP rodaram de fato
 
     return 0;
 }

@@ -2,10 +2,9 @@
 
 ## As duas variantes
 
-Mesmo algoritmo (Jacobi 2D, grid cartesiano 4×4, ghost cells, halo exchange
-não bloqueante no início de cada iteração); a única diferença está em como
-a coluna de borda (não contígua na memória) é trocada com os vizinhos
-esquerda/direita:
+A diferença é só *quem* copia a coluna de borda para
+enviar pela rede — o código C (`buffer`) ou o próprio MPI (`vector`).
+Resto do algoritmo é idêntico:
 
 - **`jacobi_mpi_buffer.c`** — empacota a coluna num buffer temporário
   (`double[1024]`) antes do `MPI_Isend`, e desempacota o buffer recebido na
