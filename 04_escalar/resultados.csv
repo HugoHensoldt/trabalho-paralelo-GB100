@@ -1,0 +1,17 @@
+threads,versao,tempo_s
+1,critical,0.328093
+1,atomic,0.148206
+1,local,0.020388
+1,reduction,0.020200
+2,critical,0.674713
+2,atomic,0.321881
+2,local,0.011077
+2,reduction,0.011592
+4,critical,1.620615
+4,atomic,0.713455
+4,local,0.010297
+4,reduction,0.010849
+8,critical,3.097307
+8,atomic,0.827605
+8,local,0.027614
+8,reduction,0.023034
