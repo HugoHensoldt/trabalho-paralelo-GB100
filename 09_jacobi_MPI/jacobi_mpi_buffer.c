@@ -108,10 +108,10 @@ int main(int argc, char *argv[])
     const int ilo = (coords[1] == 0)      ? 2      : 1;
     const int ihi = (coords[1] == PX - 1) ? cl - 1 : cl;
 
-    double *sendbuf_l = malloc(rl * sizeof(double));
-    double *sendbuf_r = malloc(rl * sizeof(double));
-    double *recvbuf_l = malloc(rl * sizeof(double));
-    double *recvbuf_r = malloc(rl * sizeof(double));
+    double *sendbuf_l = malloc(rl * sizeof(double));  // envio: coluna esquerda real
+    double *sendbuf_r = malloc(rl * sizeof(double));  // envio: coluna direita real
+    double *recvbuf_l = malloc(rl * sizeof(double));  // recebimento: p/ coluna fantasma esquerda
+    double *recvbuf_r = malloc(rl * sizeof(double));  // recebimento: p/ coluna fantasma direita
 
     MPI_Request reqs[8];
     MPI_Status stats[8];
@@ -134,8 +134,8 @@ int main(int argc, char *argv[])
 
         // ---- halo exchange: colunas (empacotadas em buffer temporario) ----
         for (int j = 1; j <= rl; j++) {
-            sendbuf_l[j - 1] = A[j][1];
-            sendbuf_r[j - 1] = A[j][cl];
+            sendbuf_l[j - 1] = A[j][1];   // empacota coluna esquerda no buffer
+            sendbuf_r[j - 1] = A[j][cl];  // empacota coluna direita no buffer
         }
         MPI_Isend(sendbuf_l, rl, MPI_DOUBLE, nbrs[LEFT],  TAG_TO_LEFT,  cartcomm, &reqs[2]);
         MPI_Isend(sendbuf_r, rl, MPI_DOUBLE, nbrs[RIGHT], TAG_TO_RIGHT, cartcomm, &reqs[3]);
@@ -146,8 +146,8 @@ int main(int argc, char *argv[])
 
         // desempacota as colunas recebidas para as colunas fantasma
         for (int j = 1; j <= rl; j++) {
-            A[j][0]      = recvbuf_l[j - 1];
-            A[j][cl + 1] = recvbuf_r[j - 1];
+            A[j][0]      = recvbuf_l[j - 1];  // buffer -> coluna fantasma esquerda
+            A[j][cl + 1] = recvbuf_r[j - 1];  // buffer -> coluna fantasma direita
         }
 
         // ---- stencil de 5 pontos sobre a faixa de atualizacao local ----
@@ -174,7 +174,7 @@ int main(int argc, char *argv[])
                numtasks, N, M, ITER_MAX, tempo);
     }
 
-    free(sendbuf_l); free(sendbuf_r); free(recvbuf_l); free(recvbuf_r);
+    free(sendbuf_l); free(sendbuf_r); free(recvbuf_l); free(recvbuf_r);  // buffers de coluna
     free(A[0]); free(A);
     free(Anew[0]); free(Anew);
 

@@ -123,10 +123,10 @@ int main(int argc, char *argv[])
         MPI_Irecv(&A[rl + 1][1], cl, MPI_DOUBLE, nbrs[DOWN], TAG_TO_UP,   cartcomm, &reqs[5]);
 
         // ---- halo exchange: colunas, via MPI_Type_vector (sem buffer manual) ----
-        MPI_Isend(&A[1][1],  1, coltype, nbrs[LEFT],  TAG_TO_LEFT,  cartcomm, &reqs[2]);
-        MPI_Isend(&A[1][cl], 1, coltype, nbrs[RIGHT], TAG_TO_RIGHT, cartcomm, &reqs[3]);
-        MPI_Irecv(&A[1][0],      1, coltype, nbrs[LEFT],  TAG_TO_RIGHT, cartcomm, &reqs[6]);
-        MPI_Irecv(&A[1][cl + 1], 1, coltype, nbrs[RIGHT], TAG_TO_LEFT,  cartcomm, &reqs[7]);
+        MPI_Isend(&A[1][1],  1, coltype, nbrs[LEFT],  TAG_TO_LEFT,  cartcomm, &reqs[2]);  // envia coluna esquerda direto da matriz
+        MPI_Isend(&A[1][cl], 1, coltype, nbrs[RIGHT], TAG_TO_RIGHT, cartcomm, &reqs[3]);  // envia coluna direita direto da matriz
+        MPI_Irecv(&A[1][0],      1, coltype, nbrs[LEFT],  TAG_TO_RIGHT, cartcomm, &reqs[6]);  // recebe direto na coluna fantasma esquerda
+        MPI_Irecv(&A[1][cl + 1], 1, coltype, nbrs[RIGHT], TAG_TO_LEFT,  cartcomm, &reqs[7]);  // recebe direto na coluna fantasma direita
 
         MPI_Waitall(8, reqs, stats);
 
